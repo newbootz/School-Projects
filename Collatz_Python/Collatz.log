@@ -1,0 +1,71 @@
+commit 30644853d9b79db42ab05fb53f5d368618ebab43
+Author: newbootz <Jesusgalvan9292@yahoo.com>
+Date:   Tue Jun 17 09:45:01 2014 -0500
+
+    learning how to connect issues to commits fixes #9 #8 #7
+
+commit e078862a0f6d45a137828d84443b4ddf8cc7b0c6
+Author: newbootz <Jesusgalvan9292@yahoo.com>
+Date:   Tue Jun 17 09:33:01 2014 -0500
+
+    4073 solution accepted, fixes #12
+
+commit 4b181e5cc1c751221ab771674341743c38742c3f
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Sun Jun 15 21:30:26 2014 -0500
+
+    final Collatz commit with all required files
+
+commit 50738db861e8a99f225d87407ebc0442d6cb8d70
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Sun Jun 15 21:06:49 2014 -0500
+
+    Cache implementation working
+
+commit a94042d7d1edb9cbfde68ae0be6357b017080107
+Author: newbootz <Jesusgalvan9292@yahoo.com>
+Date:   Sat Jun 14 19:40:02 2014 -0500
+
+    cache implementation not fully working
+
+commit 0d56ccfa3a78c4097a40fa2cc6df213b2144784d
+Author: newbootz <Jesusgalvan9292@yahoo.com>
+Date:   Fri Jun 13 17:01:50 2014 -0500
+
+    collatz solution accepted by Sphere
+
+commit 7064fd126adc82b1fa025cbab3b774d7b6e8faec
+Author: newbootz <Jesusgalvan9292@yahoo.com>
+Date:   Fri Jun 13 16:58:39 2014 -0500
+
+    collatz solution accepted by Sphere
+
+commit 940aa62fc1d22dd62e2d9b01aa7ee971a4dd2892
+Author: newbootz <Jesusgalvan9292@yahoo.com>
+Date:   Fri Jun 13 14:49:59 2014 -0500
+
+    simple implementation complete, sphere time exceeded result
+
+commit 3d919b8e18f1a890131ca0e77c10fa485f83a943
+Author: newbootz <Jesusgalvan9292@yahoo.com>
+Date:   Thu Jun 12 22:19:42 2014 -0500
+
+    Submitted to Sphere and got wrong answer result
+
+commit 52425343d0ba715303546b73eb08813010a6a1d7
+Author: newbootz <Jesusgalvan9292@yahoo.com>
+Date:   Thu Jun 12 19:08:15 2014 -0500
+
+    collatz simplest solution implemented. Preconditions, arguments, and return values checked
+
+commit 270f20c4e4b254a296181e8a270580f28eae78ab
+Author: newbootz <Jesusgalvan9292@yahoo.com>
+Date:   Thu Jun 12 00:51:06 2014 -0500
+
+    Added more unit tests to TestCollatz.py and confirmed expected failures
+
+commit 71dcecf69056cf54943bf451ee8a849361676383
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Tue Jun 10 22:12:20 2014 -0500
+
+    Collatz first commit, expected failures confirmed

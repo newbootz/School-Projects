@@ -1,0 +1,101 @@
+commit 6e5677d3e4f48c66599ad84a13a642579ee49eda
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Thu Sep 11 00:25:21 2014 -0500
+
+    removed latex directory
+
+commit f930ac17f9eaacd9b18801a175d63fcd32d380e1
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Thu Sep 11 00:23:36 2014 -0500
+
+    removed latex directory
+
+commit a4ad6352800108c873f8c9c28e2cc8170796d9cc
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Thu Sep 11 00:22:37 2014 -0500
+
+    removed latex directory
+
+commit eeef6fed3319d8e55f1474b4b22f4723bc0936e6
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Thu Sep 11 00:19:28 2014 -0500
+
+    removed latex directory
+
+commit 6781e2950fab21b27aafe9331ed7b28f1d10228f
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Thu Sep 11 00:12:15 2014 -0500
+
+    removed latex directory
+
+commit 3f87d2a49b615eced0be6e1b56b7fb57ea3ea679
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Tue Sep 9 23:49:18 2014 -0500
+
+    added Collatz.log
+
+commit 380147e3cd7b787b4747b744a6f8ba9ad6207002
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Tue Sep 9 23:42:25 2014 -0500
+
+    cleaned up the directory, removed extra files
+
+commit 40b3a0207106ae57793d7b21267ca1032bb4473e
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Tue Sep 9 23:35:34 2014 -0500
+
+    fixed doxygen documentation
+
+commit 1c3df0ac74674763a616225b61ab1170b5f3cb67
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Mon Sep 8 17:05:41 2014 -0500
+
+    documented code with doxygen
+
+commit 2be25be86027165b6dbe8caafe8f8aea38d1ae20
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Mon Sep 8 16:53:02 2014 -0500
+
+    cache implementation working
+
+commit c2821f5bc2c3d2e7bae033cc06f9bdcded1c321b
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Sun Sep 7 17:52:41 2014 -0500
+
+    Implemented cache solution, verified with acceptance and unit tests
+
+commit 29fba46f4fafbbb98bb559b8b66e27bab8e8d020
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Sun Sep 7 17:24:57 2014 -0500
+
+    added 1000 lines of acceptance tests and waiting on invite to private repo
+
+commit 93ea332cfb0f20229096603005c048ae24471654
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Thu Sep 4 14:31:44 2014 -0500
+
+    UVa accepted simple solution
+
+commit d0d04d2030a77395e866dbe94c835e6550ff1a1d
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Wed Sep 3 00:36:39 2014 -0500
+
+    eval implemented with assertions
+
+commit 2f960e77c9a470800fa22e64bb0e85168df14266
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Tue Sep 2 15:39:34 2014 -0500
+
+    wrote more unit tests in TestCollatz
+
+commit 68147c7d455e00b2d05b9e510ac21aa75cfe6198
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Tue Sep 2 15:07:08 2014 -0500
+
+    fixed unit tests and confirmed expected results
+
+commit 4d054478b48319a2bc484359ecd91879c99b20f1
+Author: Jesus Galvan <jesus92@cs.utexas.edu>
+Date:   Tue Sep 2 14:54:58 2014 -0500
+
+    Ran Run and Test Collatz confirmed expected results
