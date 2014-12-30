@@ -1,0 +1,59 @@
+Write a program to simulate Darwin's World.
+
+Darwin's World contains a two-dimensional grid. Each square in the world can contain at most one creature.
+
+Each creature has a species, a direction, and a program counter.
+
+Each species has a program (a set of instructions).
+
+A creature executes the instruction indicated by the program counter. Each creature is given a turn.
+
+Here's an example of a creature program:
+
+if_wall 3
+hop
+go 0
+left
+go 0
+Creatures begin executing at line 0. There are two types of instructions: those which cause an action and those which affect the flow of control. Above, the only action instructions are hop and left. The rest are control instructions.
+
+Darwin gives each Creature a turn in a left-to-right and top-down ordering. During a turn a Creature can execute only one action instruction.
+
+Here are the descriptions of the 9 instructions:
+
+Type	Instruction	Description
+Action	hop	If the space ahead is empty, move forward, otherwise, do nothing.
+left	Turn to face left.
+right	Turn to face right.
+infect	If the space ahead contains a creature of a different species, change that creature to be of your species, reset the program counter, but leave the direction unchanged, otherwise, do nothing.
+Control	if_empty n	If the space ahead is empty, go to line n, otherwise, go to the next line.
+if_wall n	If the space ahead is a wall, go to line n, otherwise, go to the next line.
+if_random n	Randomly choose between going to line n or the next line. If rand() from <cstdlib> returns an odd number, go to line n. Call srand(0) at the start of every test case that uses rand().
+if_enemy n	If the space ahead contains a creature of a different species, go to line n, otherwise, go to the next line.
+go n	Go to line n.
+Create a good OO design by writing well-defined classes that are responsible for a specific and modular part of the solution. Avoid getters, setters, and friends, which are often signs of a bad design:
+
+Getters and Setters
+
+You must design an interface for the various classes.
+
+The interface should be rich enough to be able to create the best creature without writing any code.
+
+I mean something like this:
+
+Species best;
+best.addInstruction(...);
+best.addInstruction(...);
+...
+Creature b1(best, ...);
+Creature b2(best, ...);
+...
+Darwin x(72, 72);
+x.addCreature(b1, ...);
+x.addCreature(b2, ...);
+...
+Create a UML diagram to represent the design. Use any UML editor that you like. The diagram only needs to show the associations and multiplicity between the classes.
+
+You may not use new, delete, malloc() or free(). You may use the STL.
+
+Analysis
