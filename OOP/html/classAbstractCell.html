@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>My Project: Class Index</title>
+<title>My Project: AbstractCell Class Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -70,29 +70,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li class="current"><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
     </ul>
   </div>
 </div>
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">Class Index</div>  </div>
+<div class="title">AbstractCell Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="qindex"><a class="qindex" href="#letter_A">A</a>&#160;|&#160;<a class="qindex" href="#letter_C">C</a>&#160;|&#160;<a class="qindex" href="#letter_F">F</a>&#160;|&#160;<a class="qindex" href="#letter_L">L</a></div>
-<table style="margin: 10px; white-space: nowrap;" align="center" width="95%" border="0" cellspacing="0" cellpadding="0">
-<tr><td rowspan="2" valign="bottom"><a name="letter_A"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;A&#160;&#160;</div></td></tr></table>
-</td><td rowspan="2" valign="bottom"><a name="letter_C"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;C&#160;&#160;</div></td></tr></table>
-</td><td valign="top"><a class="el" href="classConwayCell.html">ConwayCell</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_L"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;L&#160;&#160;</div></td></tr></table>
-</td><td></td></tr>
-<tr><td rowspan="2" valign="bottom"><a name="letter_F"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;F&#160;&#160;</div></td></tr></table>
-</td><td></td></tr>
-<tr><td valign="top"><a class="el" href="classAbstractCell.html">AbstractCell</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classCell.html">Cell</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classLife.html">Life</a>&#160;&#160;&#160;</td><td></td></tr>
-<tr><td></td><td></td><td valign="top"><a class="el" href="classFredkinCell.html">FredkinCell</a>&#160;&#160;&#160;</td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<!-- doxytag: class="AbstractCell" --><div class="dynheader">
+Inheritance diagram for AbstractCell:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classAbstractCell.png" usemap="#AbstractCell_map" alt=""/>
+  <map id="AbstractCell_map" name="AbstractCell_map">
+<area href="classConwayCell.html" alt="ConwayCell" shape="rect" coords="0,56,81,80"/>
+<area href="classFredkinCell.html" alt="FredkinCell" shape="rect" coords="91,56,172,80"/>
+</map>
+ </div></div>
+
+<p><a href="classAbstractCell-members.html">List of all members.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59e5760808472406406e19666c2d0863"></a><!-- doxytag: member="AbstractCell::neighbors" ref="a59e5760808472406406e19666c2d0863" args="(int r, int c)=0" -->
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>neighbors</b> (int r, int c)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92b09a18668608a1e259628efb6f5e71"></a><!-- doxytag: member="AbstractCell::print" ref="a92b09a18668608a1e259628efb6f5e71" args="()=0" -->
+virtual char&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90c01c375239e007e12464beeca32fbf"></a><!-- doxytag: member="AbstractCell::new_state" ref="a90c01c375239e007e12464beeca32fbf" args="(char c)=0" -->
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>new_state</b> (char c)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a929ecdd2332108f8a88254a5d42981f6"></a><!-- doxytag: member="AbstractCell::evolve" ref="a929ecdd2332108f8a88254a5d42981f6" args="(int alive_neighbors)=0" -->
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>evolve</b> (int alive_neighbors)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fd8f93b5a1547280fec2cb74241af38"></a><!-- doxytag: member="AbstractCell::clone" ref="a6fd8f93b5a1547280fec2cb74241af38" args="()=0" -->
+virtual <a class="el" href="classAbstractCell.html">AbstractCell</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>clone</b> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb2438018c3f65b08272cb1d22dc6cbd"></a><!-- doxytag: member="AbstractCell::liveness" ref="aeb2438018c3f65b08272cb1d22dc6cbd" args="()" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>liveness</b> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa92e42d5bb67f3249d8e2dde2c3228e7"></a><!-- doxytag: member="AbstractCell::alive" ref="aa92e42d5bb67f3249d8e2dde2c3228e7" args="" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>alive</b></td></tr>
 </table>
-<div class="qindex"><a class="qindex" href="#letter_A">A</a>&#160;|&#160;<a class="qindex" href="#letter_C">C</a>&#160;|&#160;<a class="qindex" href="#letter_F">F</a>&#160;|&#160;<a class="qindex" href="#letter_L">L</a></div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="AbstractCell_8h_source.html">AbstractCell.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"

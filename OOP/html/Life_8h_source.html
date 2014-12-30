@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>My Project: Class Index</title>
+<title>My Project: Life.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -47,8 +47,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -69,31 +69,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li class="current"><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title">Class Index</div>  </div>
+<div class="title">Life.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="qindex"><a class="qindex" href="#letter_A">A</a>&#160;|&#160;<a class="qindex" href="#letter_C">C</a>&#160;|&#160;<a class="qindex" href="#letter_F">F</a>&#160;|&#160;<a class="qindex" href="#letter_L">L</a></div>
-<table style="margin: 10px; white-space: nowrap;" align="center" width="95%" border="0" cellspacing="0" cellpadding="0">
-<tr><td rowspan="2" valign="bottom"><a name="letter_A"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;A&#160;&#160;</div></td></tr></table>
-</td><td rowspan="2" valign="bottom"><a name="letter_C"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;C&#160;&#160;</div></td></tr></table>
-</td><td valign="top"><a class="el" href="classConwayCell.html">ConwayCell</a>&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_L"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;L&#160;&#160;</div></td></tr></table>
-</td><td></td></tr>
-<tr><td rowspan="2" valign="bottom"><a name="letter_F"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;F&#160;&#160;</div></td></tr></table>
-</td><td></td></tr>
-<tr><td valign="top"><a class="el" href="classAbstractCell.html">AbstractCell</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classCell.html">Cell</a>&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classLife.html">Life</a>&#160;&#160;&#160;</td><td></td></tr>
-<tr><td></td><td></td><td valign="top"><a class="el" href="classFredkinCell.html">FredkinCell</a>&#160;&#160;&#160;</td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td><td></td></tr>
-</table>
-<div class="qindex"><a class="qindex" href="#letter_A">A</a>&#160;|&#160;<a class="qindex" href="#letter_C">C</a>&#160;|&#160;<a class="qindex" href="#letter_F">F</a>&#160;|&#160;<a class="qindex" href="#letter_L">L</a></div>
-</div><!-- contents -->
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor"> #include &lt;cstdlib&gt;</span>
+<a name="l00002"></a>00002 <span class="preprocessor"> #include &lt;fstream&gt;</span>  <span class="comment">// endl, istream, ostream</span>
+<a name="l00003"></a>00003 <span class="preprocessor"> #include &lt;string&gt;</span>    <span class="comment">// strings for names</span>
+<a name="l00004"></a>00004 <span class="preprocessor"> #include &lt;vector&gt;</span>    <span class="comment">// vector</span>
+<a name="l00005"></a>00005 <span class="preprocessor"> #include &lt;typeinfo&gt;</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="preprocessor"> #include &quot;Cell.h&quot;</span>
+<a name="l00008"></a>00008 <span class="preprocessor"> #include &quot;AbstractCell.h&quot;</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;
+<a name="l00013"></a><a class="code" href="classLife.html">00013</a> <span class="keyword">class </span><a class="code" href="classLife.html">Life</a>
+<a name="l00014"></a>00014 {
+<a name="l00015"></a>00015     <span class="comment">//int for number of columns and rows</span>
+<a name="l00016"></a>00016     <span class="keywordtype">int</span> cols;
+<a name="l00017"></a>00017     <span class="keywordtype">int</span> rows;
+<a name="l00018"></a>00018     <span class="comment">//output stream</span>
+<a name="l00019"></a>00019     ofstream&amp; o;
+<a name="l00020"></a>00020     <span class="comment">//cells alive</span>
+<a name="l00021"></a>00021     <span class="keywordtype">int</span> num_cells;
+<a name="l00022"></a>00022     vector&lt; vector&lt;T&gt; &gt; life_grid;
+<a name="l00023"></a>00023     <span class="comment">//grid with count of surrounding cells that are alive</span>
+<a name="l00024"></a>00024     vector&lt; vector&lt;int&gt; &gt; life_count;
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026 <span class="keyword">public</span>:
+<a name="l00027"></a>00027         
+<a name="l00028"></a>00028         <span class="comment">//methods and Life constructor </span>
+<a name="l00029"></a>00029         <span class="keywordtype">void</span> step(<span class="keywordtype">int</span> turns);
+<a name="l00030"></a>00030         <span class="keywordtype">void</span> update_neighbors();
+<a name="l00031"></a>00031         <span class="keywordtype">void</span> print_grid(<span class="keywordtype">int</span> generation);
+<a name="l00032"></a>00032   <a class="code" href="classLife.html">Life</a>(ifstream&amp; r, ofstream&amp; w);
+<a name="l00033"></a>00033         
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 };
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037 
+</pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
